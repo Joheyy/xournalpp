@@ -2324,7 +2324,7 @@ auto Control::loadPdf(const fs::path& filepath, int scrollToPage) -> bool {
         }
     }
 
-    bool an = annotatePdf(filepath, false, false);
+    bool an = annotatePdf(filepath, false, true);
     fileLoaded(scrollToPage);
     return an;
 }
